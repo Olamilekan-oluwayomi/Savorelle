@@ -1,0 +1,230 @@
+/* header */
+
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.heading-section {
+  font-size: 3.6rem;
+}
+
+@media (min-width: 768px) {
+  .menu-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .heading-section {
+    font-size: 5.4rem;
+  }
+
+  .menu-header__right {
+    font-size: 1.8rem;
+    max-width: 400px;
+  }
+}
+
+/* Slider outer — clips horizontal overflow */
+.menu__slider-outer {
+  overflow: hidden;
+  padding-inline: var(--container-pad);
+  margin-inline: calc(var(--container-pad) * -1);
+  padding-top: 10rem;
+  margin-top: -10rem;
+}
+
+.menu .container {
+  overflow: visible;
+  padding-inline: 0;
+}
+
+/* Track scrolls horizontally */
+.menu__slider-track {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 10rem;
+}
+
+/* ---- Card ---- */
+.menu__card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* Desktop: 3-up */
+@media (min-width: 768px) {
+  .menu__card {
+    flex: 0 0 calc((100% - 3rem) / 3);
+  }
+}
+
+/* ---- Floating image ---- */
+.menu__card-image-wrap {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.menu__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+/* ---- Card body ---- */
+.menu__card-body {
+  padding: 1rem 1.25rem 1.25rem;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.menu__card-name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.menu__card-desc {
+  font-size: 1.8rem;
+  color: #888;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Row 1: price + wishlist */
+.menu__card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu__card-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.menu__card-wishlist {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #666;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.menu__card-wishlist:hover,
+.menu__card-wishlist.active {
+  color: #e63946;
+  border-color: #e63946;
+}
+
+/* Row 2: Order Now button + rating */
+.menu__card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__card-btn {
+  font-size: 1.3rem;
+  padding: 0.4rem 1rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 2rem;
+  color: #e8a020;
+}
+
+.stars span {
+  color: #ccc;
+  font-size: 1.8rem;
+}
+
+/* ---- Slider nav ---- */
+.menu__slider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.menu__nav-btn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ccc;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.menu__nav-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.menu__nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.menu__dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.menu__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #444;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.menu__dot.active {
+  background: #e8a020;
+  transform: scale(1.35);
+}
