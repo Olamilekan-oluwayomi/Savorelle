@@ -1,0 +1,951 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Savorelle is a fine dining restaurant offering exquisite cuisine crafted with fresh ingredients. Reserve your table today for an unforgettable culinary experience.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savorelle — Where Taste Meets Elegance</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet" media="print" onload="this.media = 'all'">
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/savorelle.47ca9330.css">
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════
+         NAVBAR
+    ═══════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <!-- Logo -->
+        <a href="#home" class="navbar__logo">Savorelle</a>
+
+        <!-- Hamburger (mobile only) -->
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="navbar__bar"></span>
+          <span class="navbar__bar"></span>
+          <span class="navbar__bar"></span>
+        </button>
+
+        <!-- Nav drawer -->
+        <div class="navbar__drawer" id="navDrawer">
+          <ul class="navbar__links">
+            <li><a href="#home" class="navbar__link">Home</a></li>
+            <li><a href="#menu" class="navbar__link">Menu</a></li>
+            <li><a href="#about" class="navbar__link">About Us</a></li>
+            <li><a href="#crafted" class="navbar__link">Gallery</a></li>
+            <li><a href="#contact" class="navbar__link">Contact</a></li>
+            <li><a href="#contact" class="navbar__link">Careers</a></li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary navbar__cta--mobile">Order Now
+            <span class="navbar__cta-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <a href="#contact" class="btn btn-primary navbar__cta">Order Now
+          <span class="navbar__cta-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Overlay (mobile only) -->
+        <div class="navbar__overlay" id="navOverlay"></div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ═══════════════════════════════════════
+           HERO — no reveal classes (above the fold)
+      ═══════════════════════════════════════ -->
+      <section class="hero" id="home">
+        <div class="container hero__inner">
+          <!-- Left: text content -->
+          <div class="hero__content">
+            <p class="eyebrow">Fine Dining Experience</p>
+            <h1 class="hero__heading heading-display">
+              Savor Every<br>
+              Moment with<br>
+              <em class="hero__accent">Every Bite</em>
+            </h1>
+            <p class="hero__subtext">
+              Experience exquisite dining crafted with passion, fresh
+              ingredients, and unforgettable flavours.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn-primary">
+                Reserve Your Table
+                <span class="navbar__cta-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </a>
+              <a href="#menu" class="btn btn-outline"> Explore Menu </a>
+            </div>
+
+            <!-- Feature list -->
+            <ul class="hero__features">
+              <li class="hero__feature">
+                <span class="hero__feature-icon"><img src="/star.73f8a24b.svg" alt="Star Icon" loading="lazy"></span>
+                <div>
+                  <strong>Special Events</strong>
+                  <p>We bring life to your special event</p>
+                </div>
+              </li>
+              <li class="hero__feature">
+                <span class="hero__feature-icon"><img src="/fast-food.fb573912.svg" alt="Fast Food Icon" loading="lazy"></span>
+                <div>
+                  <strong>Chef's Experience</strong>
+                  <p>Dine in fine taste and culinary excellence</p>
+                </div>
+              </li>
+              <li class="hero__feature">
+                <span class="hero__feature-icon"><img src="/flame-outline.d587d41c.svg" alt="Flame Icon" loading="lazy"></span>
+                <div>
+                  <strong>Teriyaki Wings</strong>
+                  <p>Crispy, saucy wings with a hint of seasonal</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: image -->
+          <div class="hero__image-wrap">
+            <img src="/hero-image.bfd65ca8.webp" alt="Signature dish" class="hero__image" fetchpriority="high">
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           MENU / CULINARY ARTISTRY
+      ═══════════════════════════════════════ -->
+      <section class="menu section" id="menu">
+        <div class="container">
+          <div class="menu-header">
+            <div class="menu-header__left">
+              <h2 class="heading-section reveal">
+                Indulge in<br>Culinary Artistry
+              </h2>
+            </div>
+            <p class="menu-header__right reveal reveal-delay-1">
+              Explore our finest selections, crafted to perfection by
+              world-class chefs.
+            </p>
+          </div>
+
+          <!-- Slider wrapper — reveal the outer, not individual cards -->
+          <div class="menu__slider-outer reveal reveal-delay-2">
+            <div class="menu__slider-track" id="menuSlider">
+              <!-- Card 1 -->
+              <div class="menu__card">
+                <div class="menu__card-image-wrap">
+                  <img src="/plate-1.0d651197.webp" srcset="/plate-1-sm.9488fe6c.webp 480w, /plate-1.0d651197.webp 800w" sizes="(max-width: 768px) 100vw, 30vw" alt="Truffle Pasta" class="menu__card-image">
+                </div>
+                <div class="menu__card-body">
+                  <h3 class="menu__card-name">Truffle Pasta</h3>
+                  <p class="menu__card-desc">
+                    Hand-rolled fettuccine with black truffle shavings and aged
+                    parmesan.
+                  </p>
+                  <div class="menu__card-top">
+                    <span class="menu__card-price">$65</span>
+                    <button class="menu__card-wishlist" aria-label="Save to wishlist">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="menu__card-bottom">
+                    <a href="#contact" class="btn btn-primary menu__card-btn">
+                      Order Now
+                      <span class="navbar__cta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="stars">★ <span>5.0</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="menu__card">
+                <div class="menu__card-image-wrap">
+                  <img src="/plate-2.5e048c5f.webp" srcset="/plate-2-sm.2e28c7b7.webp 480w, /plate-2.5e048c5f.webp 800w" sizes="(max-width: 768px) 100vw, 30vw" alt="Sea Urchin Risotto" class="menu__card-image" loading="lazy">
+                </div>
+                <div class="menu__card-body">
+                  <h3 class="menu__card-name">Sea Urchin Risotto</h3>
+                  <p class="menu__card-desc">
+                    Creamy Arborio rice crowned with fresh uni and chive oil.
+                  </p>
+                  <div class="menu__card-top">
+                    <span class="menu__card-price">$90</span>
+                    <button class="menu__card-wishlist" aria-label="Save to wishlist">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="menu__card-bottom">
+                    <a href="#contact" class="btn btn-primary menu__card-btn">
+                      Order Now
+                      <span class="navbar__cta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="stars">★ <span>4.9</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="menu__card">
+                <div class="menu__card-image-wrap">
+                  <img src="/plate-3.9662da65.webp" srcset="/plate-3-sm.d0585589.webp 480w, /plate-3.9662da65.webp 800w" sizes="(max-width: 768px) 100vw, 30vw" alt="Matcha Lava Cake" class="menu__card-image" loading="lazy">
+                </div>
+                <div class="menu__card-body">
+                  <h3 class="menu__card-name">Matcha Lava Cake</h3>
+                  <p class="menu__card-desc">
+                    Warm Japanese matcha fondant with vanilla bean ice cream.
+                  </p>
+                  <div class="menu__card-top">
+                    <span class="menu__card-price">$35</span>
+                    <button class="menu__card-wishlist" aria-label="Save to wishlist">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="menu__card-bottom">
+                    <a href="#contact" class="btn btn-primary menu__card-btn">
+                      Order Now
+                      <span class="navbar__cta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="stars">★ <span>5.0</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="menu__card">
+                <div class="menu__card-image-wrap">
+                  <img src="/plate-4.8a4f6238.webp" srcset="/plate-4-sm.d706bab1.webp 480w, /plate-4.8a4f6238.webp 800w" sizes="(max-width: 768px) 100vw, 30vw" alt="Wagyu Beef Tataki" class="menu__card-image" loading="lazy">
+                </div>
+                <div class="menu__card-body">
+                  <h3 class="menu__card-name">Wagyu Beef Tataki</h3>
+                  <p class="menu__card-desc">
+                    Seared A5 wagyu slices with ponzu glaze and micro greens.
+                  </p>
+                  <div class="menu__card-top">
+                    <span class="menu__card-price">$120</span>
+                    <button class="menu__card-wishlist" aria-label="Save to wishlist">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="menu__card-bottom">
+                    <a href="#contact" class="btn btn-primary menu__card-btn">
+                      Order Now
+                      <span class="navbar__cta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="stars">★ <span>4.8</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="menu__card">
+                <div class="menu__card-image-wrap">
+                  <img src="/plate-5.aa787628.webp" srcset="/plate-5-sm.f052b089.webp 480w, /plate-5.aa787628.webp 800w" sizes="(max-width: 768px) 100vw, 30vw" alt="Lobster Bisque" class="menu__card-image" loading="lazy">
+                </div>
+                <div class="menu__card-body">
+                  <h3 class="menu__card-name">Lobster Bisque</h3>
+                  <p class="menu__card-desc">
+                    Silky bisque with live Maine lobster and saffron cream.
+                  </p>
+                  <div class="menu__card-top">
+                    <span class="menu__card-price">$55</span>
+                    <button class="menu__card-wishlist" aria-label="Save to wishlist">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="menu__card-bottom">
+                    <a href="#contact" class="btn btn-primary menu__card-btn">
+                      Order Now
+                      <span class="navbar__cta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="stars">★ <span>4.7</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="menu__card">
+                <div class="menu__card-image-wrap">
+                  <img src="/plate-6.3b495e56.webp" srcset="/plate-6-sm.08122c72.webp 480w, /plate-6.3b495e56.webp 800w" sizes="(max-width: 768px) 100vw, 30vw" alt="Duck Confit" class="menu__card-image" loading="lazy">
+                </div>
+                <div class="menu__card-body">
+                  <h3 class="menu__card-name">Duck Confit</h3>
+                  <p class="menu__card-desc">
+                    Slow-cooked duck leg with cherry gastrique and dauphinoise
+                    potato.
+                  </p>
+                  <div class="menu__card-top">
+                    <span class="menu__card-price">$78</span>
+                    <button class="menu__card-wishlist" aria-label="Save to wishlist">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="menu__card-bottom">
+                    <a href="#contact" class="btn btn-primary menu__card-btn">
+                      Order Now
+                      <span class="navbar__cta-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </span>
+                    </a>
+                    <div class="stars">★ <span>4.9</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.menu__slider-track -->
+          </div>
+          <!-- /.menu__slider-outer -->
+
+          <!-- Nav arrows + dots -->
+          <div class="menu__slider-nav">
+            <button class="menu__nav-btn" id="menuPrev" aria-label="Previous">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <div class="menu__dots" id="menuDots"></div>
+            <button class="menu__nav-btn" id="menuNext" aria-label="Next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           SERVING YOU BETTER
+      ═══════════════════════════════════════ -->
+      <section class="serving section" id="serving">
+        <div class="container">
+          <!-- Left -->
+          <div class="serving__content">
+            <h2 class="heading-section reveal">Serving You<br>Better</h2>
+            <p class="serving__lead reveal reveal-delay-1">
+              We offer more than great food. From online orders to world-class
+              chefs, we ensure every part of your experience is exceptional.
+            </p>
+
+            <ul class="serving__features">
+              <li class="serving__feature reveal reveal-delay-1">
+                <span class="serving__feature-icon">
+                  <!-- Online Orders -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </span>
+                <span class="serving__feature-text">Online Orders</span>
+              </li>
+
+              <li class="serving__feature reveal reveal-delay-2">
+                <span class="serving__feature-icon">
+                  <!-- Spotless Kitchen -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                </span>
+                <span class="serving__feature-text">Spotless Kitchen</span>
+              </li>
+
+              <li class="serving__feature reveal reveal-delay-3">
+                <span class="serving__feature-icon">
+                  <!-- Table Reservations -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </span>
+                <span class="serving__feature-text">Table Reservations</span>
+              </li>
+
+              <li class="serving__feature reveal reveal-delay-4">
+                <span class="serving__feature-icon">
+                  <!-- World-Class Chefs -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a5 5 0 0 1 5 5c0 1.5-.66 2.84-1.7 3.77A6 6 0 0 1 18 17H6a6 6 0 0 1 2.7-6.23A5 5 0 0 1 7 7a5 5 0 0 1 5-5z"></path>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                  </svg>
+                </span>
+                <span class="serving__feature-text">World-Class Chefs</span>
+              </li>
+
+              <li class="serving__feature reveal reveal-delay-5">
+                <span class="serving__feature-icon">
+                  <!-- 24/7 Availability -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </span>
+                <span class="serving__feature-text">24/7 Availability</span>
+              </li>
+
+              <li class="serving__feature reveal reveal-delay-5">
+                <span class="serving__feature-icon">
+                  <!-- Organised Dining Spaces -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                  </svg>
+                </span>
+                <span class="serving__feature-text">Organised Dining Spaces</span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary serving__cta reveal">
+              Book a Table
+              <span class="navbar__cta-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <!-- Right — image (reveal as one unit) -->
+          <div class="serving__image-wrap reveal reveal-delay-2">
+            <img src="/chef%201.2231f710.webp" alt="Chef in formal attire" class="serving__image" loading="lazy">
+
+            <img src="/plating.1ad2c1b4.webp" alt="Food in a plate" class="serving__plate" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           LUXURY DINING
+      ═══════════════════════════════════════ -->
+      <section class="luxury section" id="luxury">
+        <div class="container">
+          <!-- Left: stacked images — reveal as one unit -->
+          <div class="luxury__images reveal">
+            <div class="luxury__img-top-wrap">
+              <img src="/Grilled%20Food%20Photography.c3957781.webp" alt="Luxury dish" class="luxury__img-top" loading="lazy">
+            </div>
+            <div class="luxury__img-bottom-wrap">
+              <img src="/Nigerian%20Jollof%20Rice%20and%20Chicken.87e53dbb.webp" alt="Luxury dining" class="luxury__img-bottom" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right: content -->
+          <div class="luxury__content">
+            <h2 class="heading-section reveal reveal-delay-1">
+              Luxury dining<br>starts here
+            </h2>
+            <p class="luxury__lead reveal reveal-delay-2">
+              Whether it's an intimate dinner or a grand celebration, we're here
+              to make it special.
+            </p>
+            <a href="#contact" class="btn btn-primary luxury__cta reveal reveal-delay-3">
+              Book a Table
+              <span class="navbar__cta-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           CHEFS
+      ═══════════════════════════════════════ -->
+      <section class="crafted section" id="crafted">
+        <div class="container">
+          <div class="crafted-header">
+            <div class="crafted-header__left">
+              <h2 class="heading-section reveal">Crafted by<br>Experts</h2>
+            </div>
+            <p class="crafted-header__right reveal reveal-delay-1">
+              Each dish begins with vision, skill, and passion. Get to know the
+              culinary artists who turn fresh ingredients into works of art.
+            </p>
+          </div>
+
+          <!-- Slider wrapper — reveal the outer, not individual cards -->
+          <div class="menu__slider-outer reveal reveal-delay-2">
+            <div class="menu__slider-track" id="chefSlider">
+              <!-- Card 1 -->
+              <div class="crafted__card">
+                <div class="crafted__card-image-wrap">
+                  <img src="/chef-james.a60065c9.webp" alt="James Carlow" class="crafted__card-image">
+                </div>
+                <div class="crafted__card-body">
+                  <h3 class="crafted__card-name">James Carlow</h3>
+                  <p class="crafted__card-role">Head Chef</p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="crafted__card">
+                <div class="crafted__card-image-wrap">
+                  <img src="/chef-elena.10e23d30.webp" alt="Elena Morin" class="crafted__card-image" loading="lazy">
+                </div>
+                <div class="crafted__card-body">
+                  <h3 class="crafted__card-name">Elena Morin</h3>
+                  <p class="crafted__card-role">Pastry Chef</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="crafted__card">
+                <div class="crafted__card-image-wrap">
+                  <img src="/chef-takeshi.5f44906b.webp" alt="Takeshi Ito" class="crafted__card-image" loading="lazy">
+                </div>
+                <div class="crafted__card-body">
+                  <h3 class="crafted__card-name">Takeshi Ito</h3>
+                  <p class="crafted__card-role">Sous Chef</p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="crafted__card">
+                <div class="crafted__card-image-wrap">
+                  <img src="/chef-amara.f86ea33b.webp" alt="Amara Osei" class="crafted__card-image" loading="lazy">
+                </div>
+                <div class="crafted__card-body">
+                  <h3 class="crafted__card-name">Amara Osei</h3>
+                  <p class="crafted__card-role">Grill Specialist</p>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="crafted__card">
+                <div class="crafted__card-image-wrap">
+                  <img src="/chef-sofia.7f202451.webp" alt="Sofia Reyes" class="crafted__card-image" loading="lazy">
+                </div>
+                <div class="crafted__card-body">
+                  <h3 class="crafted__card-name">Sofia Reyes</h3>
+                  <p class="crafted__card-role">Saucier</p>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="crafted__card">
+                <div class="crafted__card-image-wrap">
+                  <img src="/chef-luca.c1cfa2ad.webp" alt="Luca Ferrari" class="crafted__card-image" loading="lazy">
+                </div>
+                <div class="crafted__card-body">
+                  <h3 class="crafted__card-name">Luca Ferrari</h3>
+                  <p class="crafted__card-role">Sommelier</p>
+                </div>
+              </div>
+            </div>
+            <!-- /.menu__slider-track -->
+          </div>
+          <!-- /.menu__slider-outer -->
+
+          <!-- Nav arrows + dots -->
+          <div class="menu__slider-nav">
+            <button class="menu__nav-btn" id="chefPrev" aria-label="Previous">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <div class="menu__dots" id="chefDots"></div>
+            <button class="menu__nav-btn" id="chefNext" aria-label="Next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           TESTIMONIALS
+      ═══════════════════════════════════════ -->
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="testimonials-header">
+            <div class="testimonials-header__left">
+              <h2 class="heading-section reveal">
+                Praise from<br>Our Patrons
+              </h2>
+            </div>
+            <p class="testimonials-header__right reveal reveal-delay-1">
+              Real voices. Honest praise. Unforgettable moments shared at our
+              table.
+            </p>
+          </div>
+
+          <div class="testimonials__grid">
+            <!-- Card 1 -->
+            <div class="testimonials__card reveal reveal-delay-1">
+              <div class="testimonials__card-top">
+                <div class="testimonials__avatar-wrap">
+                  <img src="/patron-sophia.81b551d0.webp" alt="Sophia M" class="testimonials__avatar" loading="lazy">
+                </div>
+                <div class="testimonials__meta">
+                  <h4 class="testimonials__name">Sophia M</h4>
+                  <p class="testimonials__title">Food Enthusiast</p>
+                  <div class="testimonials__stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonials__quote">
+                "A truly unforgettable experience. From the ambiance to the
+                plating, everything was flawless. The tasting menu was a journey
+                in itself."
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonials__card reveal reveal-delay-2">
+              <div class="testimonials__card-top">
+                <div class="testimonials__avatar-wrap">
+                  <img src="/patron-daniel.a9fe02c3.webp" alt="Daniel L" class="testimonials__avatar" loading="lazy">
+                </div>
+                <div class="testimonials__meta">
+                  <h4 class="testimonials__name">Daniel L</h4>
+                  <p class="testimonials__title">Restaurant Critic</p>
+                  <div class="testimonials__stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonials__quote">
+                "Every bite was a masterpiece. You can taste the passion and
+                precision in every dish. Absolutely worth it."
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonials__card reveal reveal-delay-3">
+              <div class="testimonials__card-top">
+                <div class="testimonials__avatar-wrap">
+                  <img src="/patron-ava.0026a668.webp" alt="Ava B" class="testimonials__avatar" loading="lazy">
+                </div>
+                <div class="testimonials__meta">
+                  <h4 class="testimonials__name">Ava B</h4>
+                  <p class="testimonials__title">Food Blogger</p>
+                  <div class="testimonials__stars">★★★★★</div>
+                </div>
+              </div>
+              <p class="testimonials__quote">
+                "Exceptional service, world-class flavors, and a setting that
+                makes you feel like royalty. My new favourite dining
+                destination."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           RESERVATION
+      ═══════════════════════════════════════ -->
+      <section class="reserve section" id="contact">
+        <div class="container">
+          <div class="reserve__bg">
+            <img src="/form-image-bg.4eba3e41.jpg" alt="" class="reserve__bg-image" aria-hidden="true" loading="lazy">
+
+            <!-- Dark overlay so text stays readable -->
+            <div class="reserve__overlay" aria-hidden="true"></div>
+
+            <div class="container reserve__container">
+              <!-- Left: heading (desktop only) -->
+              <div class="reserve__left">
+                <h2 class="heading-section reveal">Reserve<br>Your Table</h2>
+              </div>
+
+              <!-- Right: form card -->
+              <div class="reserve__form-card reveal reveal-delay-1">
+                <h3 class="reserve__form-title">Reserve Your Table</h3>
+
+                <form class="reserve__form" novalidate="">
+                  <div class="reserve__field">
+                    <label for="reserve-location" class="reserve__label">Choose Location</label>
+                    <div class="reserve__select-wrap">
+                      <select id="reserve-location" class="reserve__select" required="">
+                        <option value="" disabled="" selected="">
+                          Select your preferred dining area
+                        </option>
+                        <option value="main">Main Dining Room</option>
+                        <option value="terrace">Terrace</option>
+                        <option value="private">Private Room</option>
+                        <option value="bar">Chef's Bar</option>
+                      </select>
+                      <svg class="reserve__select-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="reserve__field">
+                    <label for="reserve-cuisine" class="reserve__label">Cuisine</label>
+                    <div class="reserve__select-wrap">
+                      <select id="reserve-cuisine" class="reserve__select" required="">
+                        <option value="" disabled="" selected="">
+                          Select your cuisine preference
+                        </option>
+                        <option value="tasting">Tasting Menu</option>
+                        <option value="a-la-carte">À La Carte</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="seafood">Seafood Speciality</option>
+                      </select>
+                      <svg class="reserve__select-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="reserve__row">
+                    <div class="reserve__field">
+                      <label for="reserve-date" class="reserve__label">Date</label>
+                      <input type="date" id="reserve-date" class="reserve__input" required="">
+                    </div>
+                    <div class="reserve__field">
+                      <label for="reserve-time" class="reserve__label">Time</label>
+                      <input type="time" id="reserve-time" class="reserve__input" required="">
+                    </div>
+                  </div>
+
+                  <div class="reserve__field">
+                    <label for="reserve-guests" class="reserve__label">Guests</label>
+                    <div class="reserve__select-wrap">
+                      <select id="reserve-guests" class="reserve__select" required="">
+                        <option value="" disabled="" selected="">
+                          Number of guests
+                        </option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6+">6+ Guests</option>
+                      </select>
+                      <svg class="reserve__select-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary reserve__submit">
+                    Confirm Reservation
+                    <span class="navbar__cta-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                      </svg>
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           CTA BANNER
+      ═══════════════════════════════════════ -->
+      <section class="flavor section" id="flavor">
+        <div class="flavor__bg">
+          <img src="/flavor%20bg.1317d47f.webp" alt="" class="flavor__bg-image" aria-hidden="true" loading="lazy">
+          <div class="flavor__overlay" aria-hidden="true"></div>
+
+          <div class="container flavor__container">
+            <h2 class="heading-section flavor__heading reveal">
+              Let Flavor<br>Lead the Way
+            </h2>
+            <p class="flavor__lead reveal reveal-delay-1">
+              Reserve your table today and indulge in a taste that lingers.
+            </p>
+            <a href="#contact" class="btn btn-primary flavor__cta reveal reveal-delay-2">
+              Book a Table
+              <span class="navbar__cta-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════ -->
+    <footer class="footer" id="footer">
+      <div class="container footer__top">
+        <!-- Col 1: Logo + tagline -->
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">Savorelle</a>
+          <p class="footer__tagline">Where Taste Meets Elegance</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="X / Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Savorelle links -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Savorelle</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Home</a></li>
+            <li><a href="#menu" class="footer__link">Our Menu</a></li>
+            <li><a href="#crafted" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Gallery</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Dining Experience links -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Dining Experience</h4>
+          <ul class="footer__links">
+            <li><a href="#serving" class="footer__link">Tasting Menu</a></li>
+            <li><a href="#menu" class="footer__link">À La Carte</a></li>
+            <li><a href="#reserve" class="footer__link">Reservations</a></li>
+            <li><a href="#" class="footer__link">Gift Cards</a></li>
+            <li><a href="#" class="footer__link">Events</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer__col">
+          <h4 class="footer__col-title">Connect With Us</h4>
+          <ul class="footer__links footer__contact">
+            <li class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              123 Culinary Street, New York, US
+            </li>
+            <li class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              +1 (800) 123-4554
+            </li>
+            <li class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              hello@savorelle.com
+            </li>
+            <li class="footer__contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              Mon–Sun: 11am – 11pm
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+          <p class="footer__copy">
+            © <span id="footerYear"></span> Savorelle Restaurant. All
+            rights reserved.
+          </p>
+          <div class="footer__legal">
+            <a href="#" class="footer__legal-link">Privacy Policy</a>
+            <a href="#" class="footer__legal-link">Terms &amp; Conditions</a>
+            <a href="#" class="footer__legal-link">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/savorelle.72be8890.js"></script>
+  
+
+<script src="/savorelle.3464ddca.js"></script></body></html>

@@ -1,5 +1,14 @@
 "use strict";
 
+// utility
+function debounce(fn, delay = 150) {
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn(...args), delay);
+  };
+}
+
 /* ═══════════════════════════════════════════════════
    NAVBAR — scroll state
 ════════════════════════════════════════════════════ */
@@ -180,15 +189,18 @@ function initSlider({
   /* --- Resize handler --- */
   let previousCardsPerPage = getCardsPerPage();
 
-  window.addEventListener("resize", () => {
-    const current = getCardsPerPage();
-    if (current !== previousCardsPerPage) {
-      previousCardsPerPage = current;
-      currentPage = 0;
-      buildDots();
-    }
-    goToPage(currentPage);
-  });
+  window.addEventListener(
+    "resize",
+    debounce(() => {
+      const current = getCardsPerPage();
+      if (current !== previousCardsPerPage) {
+        previousCardsPerPage = current;
+        currentPage = 0;
+        buildDots();
+      }
+      goToPage(currentPage);
+    }, 150),
+  );
 
   /* --- Init --- */
   buildDots();

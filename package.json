@@ -1,0 +1,26 @@
+{
+  "name": "savorelle",
+  "version": "1.0.0",
+  "description": "A fully responsive restaurant landing page built with vanilla HTML, CSS, and JavaScript. No frameworks, no dependencies — just clean, hand-crafted front-end code.",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olamilekan-oluwayomi/Savorelle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Olamilekan-oluwayomi/Savorelle/issues"
+  },
+  "homepage": "https://github.com/Olamilekan-oluwayomi/Savorelle#readme",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}

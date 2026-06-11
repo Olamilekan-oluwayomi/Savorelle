@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Savorelle is a fine dining restaurant offering exquisite cuisine crafted with fresh ingredients. Reserve your table today for an unforgettable culinary experience."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Savorelle — Where Taste Meets Elegance</title>
 
@@ -11,21 +15,18 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/serving-section.css" />
-    <link rel="stylesheet" href="css/luxury.css" />
-    <link rel="stylesheet" href="css/crafted.css" />
-    <link rel="stylesheet" href="css/testimonials.css" />
-    <link rel="stylesheet" href="css/reservation.css" />
-    <link rel="stylesheet" href="css/flavor.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- ═══════════════════════════════════════
@@ -150,7 +151,7 @@
             <ul class="hero__features">
               <li class="hero__feature">
                 <span class="hero__feature-icon"
-                  ><img src="assets/star.svg" alt="Star Icon"
+                  ><img src="assets/star.svg" alt="Star Icon" loading="lazy"
                 /></span>
                 <div>
                   <strong>Special Events</strong>
@@ -159,7 +160,10 @@
               </li>
               <li class="hero__feature">
                 <span class="hero__feature-icon"
-                  ><img src="assets/fast-food.svg" alt="Fast Food Icon"
+                  ><img
+                    src="assets/fast-food.svg"
+                    alt="Fast Food Icon"
+                    loading="lazy"
                 /></span>
                 <div>
                   <strong>Chef's Experience</strong>
@@ -168,7 +172,10 @@
               </li>
               <li class="hero__feature">
                 <span class="hero__feature-icon"
-                  ><img src="assets/flame-outline.svg" alt="Flame Icon"
+                  ><img
+                    src="assets/flame-outline.svg"
+                    alt="Flame Icon"
+                    loading="lazy"
                 /></span>
                 <div>
                   <strong>Teriyaki Wings</strong>
@@ -181,9 +188,10 @@
           <!-- Right: image -->
           <div class="hero__image-wrap">
             <img
-              src="assets/hero image.png"
+              src="assets/hero-image.webp"
               alt="Signature dish"
               class="hero__image"
+              fetchpriority="high"
             />
           </div>
         </div>
@@ -213,7 +221,12 @@
               <div class="menu__card">
                 <div class="menu__card-image-wrap">
                   <img
-                    src="assets/plate 1.png"
+                    src="assets/plate-1.webp"
+                    srcset="
+                      assets/plate-1-sm.webp 480w,
+                      assets/plate-1.webp    800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 30vw"
                     alt="Truffle Pasta"
                     class="menu__card-image"
                   />
@@ -276,9 +289,15 @@
               <div class="menu__card">
                 <div class="menu__card-image-wrap">
                   <img
-                    src="assets/plate 2.png"
+                    src="assets/plate-2.webp"
+                    srcset="
+                      assets/plate-2-sm.webp 480w,
+                      assets/plate-2.webp    800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 30vw"
                     alt="Sea Urchin Risotto"
                     class="menu__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="menu__card-body">
@@ -338,9 +357,15 @@
               <div class="menu__card">
                 <div class="menu__card-image-wrap">
                   <img
-                    src="assets/plate 3.png"
+                    src="assets/plate-3.webp"
+                    srcset="
+                      assets/plate-3-sm.webp 480w,
+                      assets/plate-3.webp    800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 30vw"
                     alt="Matcha Lava Cake"
                     class="menu__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="menu__card-body">
@@ -400,9 +425,15 @@
               <div class="menu__card">
                 <div class="menu__card-image-wrap">
                   <img
-                    src="assets/plate 4.png"
+                    src="assets/plate-4.webp"
+                    srcset="
+                      assets/plate-4-sm.webp 480w,
+                      assets/plate-4.webp    800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 30vw"
                     alt="Wagyu Beef Tataki"
                     class="menu__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="menu__card-body">
@@ -462,9 +493,15 @@
               <div class="menu__card">
                 <div class="menu__card-image-wrap">
                   <img
-                    src="assets/plate 5.png"
+                    src="assets/plate-5.webp"
+                    srcset="
+                      assets/plate-5-sm.webp 480w,
+                      assets/plate-5.webp    800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 30vw"
                     alt="Lobster Bisque"
                     class="menu__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="menu__card-body">
@@ -524,9 +561,15 @@
               <div class="menu__card">
                 <div class="menu__card-image-wrap">
                   <img
-                    src="assets/plate 6.png"
+                    src="assets/plate-6.webp"
+                    srcset="
+                      assets/plate-6-sm.webp 480w,
+                      assets/plate-6.webp    800w
+                    "
+                    sizes="(max-width: 768px) 100vw, 30vw"
                     alt="Duck Confit"
                     class="menu__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="menu__card-body">
@@ -805,15 +848,17 @@
           <!-- Right — image (reveal as one unit) -->
           <div class="serving__image-wrap reveal reveal-delay-2">
             <img
-              src="assets/chef 1.png"
+              src="assets/chef 1.webp"
               alt="Chef in formal attire"
               class="serving__image"
+              loading="lazy"
             />
 
             <img
-              src="assets/plating.png"
+              src="assets/plating.webp"
               alt="Food in a plate"
               class="serving__plate"
+              loading="lazy"
             />
           </div>
         </div>
@@ -828,16 +873,18 @@
           <div class="luxury__images reveal">
             <div class="luxury__img-top-wrap">
               <img
-                src="assets/Grilled Food Photography.jpg"
+                src="assets/Grilled Food Photography.webp"
                 alt="Luxury dish"
                 class="luxury__img-top"
+                loading="lazy"
               />
             </div>
             <div class="luxury__img-bottom-wrap">
               <img
-                src="assets/Nigerian Jollof Rice and Chicken.jpg"
+                src="assets/Nigerian Jollof Rice and Chicken.webp"
                 alt="Luxury dining"
                 class="luxury__img-bottom"
+                loading="lazy"
               />
             </div>
           </div>
@@ -899,7 +946,7 @@
               <div class="crafted__card">
                 <div class="crafted__card-image-wrap">
                   <img
-                    src="assets/chef-james.png"
+                    src="assets/chef-james.webp"
                     alt="James Carlow"
                     class="crafted__card-image"
                   />
@@ -914,9 +961,10 @@
               <div class="crafted__card">
                 <div class="crafted__card-image-wrap">
                   <img
-                    src="assets/chef-elena.png"
+                    src="assets/chef-elena.webp"
                     alt="Elena Morin"
                     class="crafted__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="crafted__card-body">
@@ -929,9 +977,10 @@
               <div class="crafted__card">
                 <div class="crafted__card-image-wrap">
                   <img
-                    src="assets/chef-takeshi.png"
+                    src="assets/chef-takeshi.webp"
                     alt="Takeshi Ito"
                     class="crafted__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="crafted__card-body">
@@ -944,9 +993,10 @@
               <div class="crafted__card">
                 <div class="crafted__card-image-wrap">
                   <img
-                    src="assets/chef-amara.png"
+                    src="assets/chef-amara.webp"
                     alt="Amara Osei"
                     class="crafted__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="crafted__card-body">
@@ -959,9 +1009,10 @@
               <div class="crafted__card">
                 <div class="crafted__card-image-wrap">
                   <img
-                    src="assets/chef-sofia.jpg"
+                    src="assets/chef-sofia.webp"
                     alt="Sofia Reyes"
                     class="crafted__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="crafted__card-body">
@@ -974,9 +1025,10 @@
               <div class="crafted__card">
                 <div class="crafted__card-image-wrap">
                   <img
-                    src="assets/chef-luca.png"
+                    src="assets/chef-luca.webp"
                     alt="Luca Ferrari"
                     class="crafted__card-image"
+                    loading="lazy"
                   />
                 </div>
                 <div class="crafted__card-body">
@@ -1051,9 +1103,10 @@
               <div class="testimonials__card-top">
                 <div class="testimonials__avatar-wrap">
                   <img
-                    src="assets/patron-sophia.png"
+                    src="assets/patron-sophia.webp"
                     alt="Sophia M"
                     class="testimonials__avatar"
+                    loading="lazy"
                   />
                 </div>
                 <div class="testimonials__meta">
@@ -1074,9 +1127,10 @@
               <div class="testimonials__card-top">
                 <div class="testimonials__avatar-wrap">
                   <img
-                    src="assets/patron-daniel.png"
+                    src="assets/patron-daniel.webp"
                     alt="Daniel L"
                     class="testimonials__avatar"
+                    loading="lazy"
                   />
                 </div>
                 <div class="testimonials__meta">
@@ -1096,9 +1150,10 @@
               <div class="testimonials__card-top">
                 <div class="testimonials__avatar-wrap">
                   <img
-                    src="assets/patron-ava.jpg"
+                    src="assets/patron-ava.webp"
                     alt="Ava B"
                     class="testimonials__avatar"
+                    loading="lazy"
                   />
                 </div>
                 <div class="testimonials__meta">
@@ -1124,10 +1179,11 @@
         <div class="container">
           <div class="reserve__bg">
             <img
-              src="assets/form image bg.jpg"
+              src="assets/form-image-bg.jpg"
               alt=""
               class="reserve__bg-image"
               aria-hidden="true"
+              loading="lazy"
             />
 
             <!-- Dark overlay so text stays readable -->
@@ -1308,10 +1364,11 @@
       <section class="flavor section" id="flavor">
         <div class="flavor__bg">
           <img
-            src="assets/flavor bg.png"
+            src="assets/flavor bg.webp"
             alt=""
             class="flavor__bg-image"
             aria-hidden="true"
+            loading="lazy"
           />
           <div class="flavor__overlay" aria-hidden="true"></div>
 
