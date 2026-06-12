@@ -188,7 +188,14 @@
           <!-- Right: image -->
           <div class="hero__image-wrap">
             <img
-              src="assets/hero-image.webp"
+              src="assets/hero-image-sm.webp"
+              srcset="
+                assets/hero-image-sm.webp  700w,
+                assets/hero-image.webp    1365w
+              "
+              sizes="
+              (max-width: 768px) 100vw,
+              50vw"
               alt="Signature dish"
               class="hero__image"
               fetchpriority="high"
@@ -1591,6 +1598,6 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
   </body>
 </html>

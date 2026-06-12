@@ -14,7 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Olamilekan-oluwayomi/Savorelle/issues"
   },
@@ -22,5 +22,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "devDependencies": {
     "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "sharp": "^0.35.1"
   }
 }

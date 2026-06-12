@@ -1,0 +1,22 @@
+<svg
+  class="hero__arrow"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 120 60"
+  fill="none"
+>
+  <path
+    d="M5 10 C 20 5, 60 5, 90 30 C 105 42, 110 50, 105 55"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <path
+    d="M95 48 L105 55 L100 42"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>
