@@ -28,6 +28,11 @@
   }
 }
 
+.menu,
+.crafted {
+  overflow-x: hidden;
+}
+
 /* Slider outer — clips horizontal overflow */
 .menu__slider-outer {
   overflow: hidden;
