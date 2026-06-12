@@ -159,7 +159,7 @@
   width: 100%;
   justify-content: center;
   margin-top: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /* ---- Desktop layout ---- */
@@ -181,6 +181,10 @@
   .reserve__form-card {
     flex: 0 0 420px;
     width: 420px;
+  }
+
+  .reserve__submit {
+    font-size: 1.6rem;
   }
 }
 
