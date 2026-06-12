@@ -8,7 +8,8 @@ A fully responsive restaurant landing page built with vanilla HTML, CSS, and Jav
 
 ## Live Demo
 
-🔗 [View Live Site]
+🔗 [View Live Site] https://savorelle-ten.vercel.app/
+Design by Ahmad.
 
 ---
 
